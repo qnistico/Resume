@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 85%;
+    padding: 2rem;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25.88px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h2 {
+    margin: 0.5rem 0 0.5rem 0;
+    color: #003147;
+    font-weight: 900;
+}
+
+h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2a7da2;
+}
+
+li {
+    margin: 0.5rem 0 0 1rem;
+}
+
+.flex_main {
+    display: flex;
+    margin: auto;
+    background-color: white;
+}
+
+.column_flex {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.project {
+    padding: 2rem 0 0 0;
+    h3 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+    h4 {
+        color: #626262;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 1rem;
+    }
+    a {
+        color: #0645AD;
+    }
+    .small_hr {
+        width: 38%;
+        margin-top: 2rem;
+    }
+}
+
+.summary {
+    padding: 2rem 0;
+    p {
+        margin-top: 1rem;
+    }
+    a {
+        color: #0645AD;
+    }
+}
+
+.top_header {
+    background-color: #003147;
+    width: 20vw;
+    height: 100%;
+    padding: 1rem;
+    h1 {
+        font-size: 30px;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    h2 {
+        color: white;
+        margin-top: 0.5rem;
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: white;
+    }
+    .waves {
+        width: 100%;
+    }
+    
+        .header_name {
+            color: white;
+            background-color: #127190;
+            padding: 1rem;
+            text-align: center;
+        }
+        .header_info {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: 2rem;
+            .header_info_item {
+                padding: 8px 0;
+                margin: 0.5rem 0 0.5rem 0;
+                color: white;
+                i {
+                    font-size: 1.75rem;
+                    margin-right: 1rem;
+                    vertical-align: sub;
+                    color: #03a9f4;
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                
+            }
+        }
+    }
+}
+
+.skills {
+    padding: 2rem 0;
+    .skills_flex {
+        display: flex;
+        justify-content: flex-start;
+        .skills_item {
+        }
+        .skills_item_2, .skills_item_3 {
+            margin-left: 17.5%;
+        }
+    }
+    li {
+        list-style-type: none;
+        margin: 2rem 0 0 0;
+    }
+    i {
+        margin: 2rem 12px 0 0;
+        font-size: 1.5rem;
+    }
+}
+
+.icon_flex {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.interests {
+    padding: 2rem 0;
+    p {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+}
