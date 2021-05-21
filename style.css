@@ -137,6 +137,14 @@ li {
   margin-top: 2rem;
 }
 
+.top_header .header_info ul {
+  list-style-type: none;
+}
+
+.top_header .header_info ul li {
+  margin: 0 0 2rem 0;
+}
+
 .top_header .header_info .header_info_item {
   padding: 8px 0;
   margin: 0.5rem 0 0.5rem 0;
