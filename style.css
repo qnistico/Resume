@@ -6,7 +6,7 @@
 }
 
 html, body {
-  width: 85%;
+  width: 90%;
   padding: 2rem;
   margin: auto;
   font-size: 16px;
@@ -100,19 +100,27 @@ li {
 }
 
 .top_header h1 {
-  font-size: 30px;
-  margin: 0.5rem 0 0.5rem 0;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .top_header h2 {
   color: white;
   margin-top: 0.5rem;
-  font-size: 16px;
+  font-size: 38px;
+  font-weight: 800;
 }
 
 .top_header h3 {
   font-size: 1.2rem;
   color: white;
+}
+
+.top_header h4 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .top_header .waves {
@@ -121,7 +129,7 @@ li {
 
 .top_header .header_name {
   color: white;
-  background-color: #127190;
+  background-color: #0d5d77;
   padding: 1rem;
   text-align: center;
 }
@@ -142,7 +150,7 @@ li {
 }
 
 .top_header .header_info ul li {
-  margin: 0 0 2rem 0;
+  margin: 0 0 4px 0;
 }
 
 .top_header .header_info .header_info_item {
