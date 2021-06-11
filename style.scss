@@ -49,8 +49,17 @@ li {
     padding: 0 2rem;
 }
 
+.work_experience_flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.work_experience {
+    padding: 2rem 0;
+}
 .project {
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 0rem;
+    width: 100%;
     h3 {
         font-weight: 900;
         font-size: 20px;
@@ -65,12 +74,16 @@ li {
     a {
         color: #0645AD;
     }
-    .small_hr {
-        width: 38%;
-        margin-top: 2rem;
-    }
 }
 
+.small_hr {
+    width: 12%;
+    margin-top: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+}
 .summary {
     padding: 2rem 0;
     p {
@@ -174,21 +187,25 @@ li {
     }
 }
 
-.icon_flex {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
 .interests {
-    padding: 2rem 0;
+    padding: 1rem 0;
+    .interests_flex {
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 2rem;
+    }
     p {
-        margin: 0.5rem 0 0.5rem 0;
     }
     i {
         font-size: 1.75rem;
-        margin-right: 1rem;
         vertical-align: sub;
         color: #3d75d0;
+    }
+    .icon_flex {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        margin-right: 2rem;
     }
 }
 
@@ -258,6 +275,12 @@ li {
     }
     body {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .work_experience_flex {
+        flex-flow: column !important;
     }
 }
 

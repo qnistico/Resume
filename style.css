@@ -57,8 +57,26 @@ li {
   padding: 0 2rem;
 }
 
+.work_experience_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work_experience {
+  padding: 2rem 0;
+}
+
 .project {
-  padding: 2rem 0 0 0;
+  padding: 2rem 2rem 0 0rem;
+  width: 100%;
 }
 
 .project h3 {
@@ -79,8 +97,12 @@ li {
   color: #0645AD;
 }
 
-.project .small_hr {
-  width: 38%;
+.small_hr {
+  width: 12%;
+  margin-top: 2rem;
+}
+
+hr {
   margin-top: 2rem;
 }
 
@@ -209,29 +231,37 @@ li {
   font-size: 1.5rem;
 }
 
-.icon_flex {
+.interests {
+  padding: 1rem 0;
+}
+
+.interests .interests_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-}
-
-.interests {
-  padding: 2rem 0;
-}
-
-.interests p {
-  margin: 0.5rem 0 0.5rem 0;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding-top: 2rem;
 }
 
 .interests i {
   font-size: 1.75rem;
-  margin-right: 1rem;
   vertical-align: sub;
   color: #3d75d0;
+}
+
+.interests .icon_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: center;
+  margin-right: 2rem;
 }
 
 .cover_body {
@@ -324,6 +354,15 @@ li {
   }
   body {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .work_experience_flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column !important;
+            flex-flow: column !important;
   }
 }
 
