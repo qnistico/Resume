@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 90%;
+body {
+    width: 100%;
+    background-color: lightblue;
     padding: 2rem;
     margin: auto;
     font-size: 16px;
@@ -13,19 +14,21 @@ html, body {
     line-height: 25.88px;
 }
 
-body {
-    background-color: lightblue;
+p {
+    color: #333 !important;
 }
 
 h2 {
     margin: 0.5rem 0 0.5rem 0;
     color: #003147;
+    font-size: 28px;
     font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
     margin: 0 0 0.5rem 0;
-    color: #2a7da2;
+    color: #3d75d0;
 }
 
 li {
@@ -34,6 +37,7 @@ li {
 
 .flex_main {
     display: flex;
+    width: 1280px;
     margin: auto;
     background-color: white;
 }
@@ -79,29 +83,36 @@ li {
 
 .top_header {
     background-color: #003147;
-    width: 20vw;
+    width: 332px;
     height: 100%;
     padding: 1rem;
     h1 {
         font-size: 38px;
         font-weight: 800;
         margin: 0.5rem 0 1rem 0;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
     }
     h2 {
         color: white;
         margin-top: 0.5rem;
         font-size: 38px;
         font-weight: 800;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
     }
     h3 {
         font-size: 1.2rem;
         color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
     }
 
     h4 {
         font-size: 1rem;
         font-style: italic;
         font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
     }
     .waves {
         width: 100%;
@@ -172,5 +183,86 @@ li {
     padding: 2rem 0;
     p {
         margin: 0.5rem 0 0.5rem 0;
+    }
+    i {
+        font-size: 1.75rem;
+        margin-right: 1rem;
+        vertical-align: sub;
+        color: #3d75d0;
+    }
+}
+
+// cover
+
+.cover_body {
+    background-color:white;
+    width: 62% !important;
+    padding: 0;
+}
+
+.cover_header {
+    background-color: #003147;
+    color: white;
+    min-height: 25vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+    }
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .cover_header_flex {
+        /*
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        */
+    }
+}
+
+.coverletter_content {
+    padding: 1rem;
+    .mb-1 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .flex_main {
+        flex-flow: column nowrap !important;
+        width: 100%;
+    }
+    .top_header {
+        width: 100%;
+        .header_flex {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    body {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .flex_main {
+        width: 100%;
     }
 }
