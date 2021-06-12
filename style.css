@@ -240,7 +240,7 @@ hr {
 }
 
 .interests {
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 .interests .interests_flex {
@@ -251,14 +251,13 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding-top: 2rem;
+  padding: 1rem 0;
 }
 
 .interests i {
   font-size: 1.75rem;
-  vertical-align: sub;
   color: #3d75d0;
-  margin-top: 1rem;
+  margin-bottom: 8px;
 }
 
 .interests .icon_flex {
