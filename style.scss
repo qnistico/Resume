@@ -15,7 +15,7 @@ body {
 }
 
 p {
-    color: #333 !important;
+    color: #333;
 }
 
 h2 {
@@ -141,6 +141,13 @@ hr {
             display: flex;
             flex-flow: column nowrap;
             margin-top: 2rem;
+            ul li::before {
+                content: "\2022";
+                color: #03a9f4;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+              }
             ul {
                 list-style-type: none;
                 li {
@@ -200,6 +207,7 @@ hr {
         font-size: 1.75rem;
         vertical-align: sub;
         color: #3d75d0;
+        margin-top: 1rem;
     }
     .icon_flex {
         display: flex;
@@ -239,16 +247,19 @@ hr {
         font-weight: 500;
         font-style: italic;
     }
+    p {
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+    }
     a {
         color: white;
         text-decoration: none;
     }
     .cover_header_flex {
-        /*
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
-        */
     }
 }
 
