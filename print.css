@@ -1,0 +1,23 @@
+.top_header h1, h2, h3, h4, a, li {
+    color: #003147 !important;
+}
+
+.top_header {
+    height: auto;
+}
+
+body {
+    padding: 0;
+}
+
+.flex_main {
+    width: 100% !important;
+}
+
+hr {
+    margin: 1rem 0 0 0;
+}
+
+.project {
+    padding-top: 1rem;
+}
