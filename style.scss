@@ -37,6 +37,7 @@ li {
 
 .flex_main {
     display: flex;
+    flex-flow: column;
     width: 1280px;
     margin: auto;
     background-color: white;
@@ -96,7 +97,7 @@ hr {
 
 .top_header {
     background-color: #003147;
-    width: 332px;
+    width: 100%;
     padding: 1rem;
     h1 {
         font-size: 38px;
@@ -126,9 +127,7 @@ hr {
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
     }
-    .waves {
-        width: 100%;
-    }
+    
     
         .header_name {
             color: white;
@@ -170,28 +169,23 @@ hr {
             }
         }
     }
+    .header_flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
-.skills {
-    padding: 2rem 0;
-    .skills_flex {
-        display: flex;
-        justify-content: flex-start;
-        .skills_item {
+
+        .skills_flex {
+            display: flex;
+            .skills_item li {
+                padding-right: 20px !important;
+            }
         }
-        .skills_item_2, .skills_item_3 {
-            margin-left: 17.5%;
-        }
-    }
-    li {
-        list-style-type: none;
-        margin: 2rem 0 0 0;
-    }
-    i {
-        margin: 2rem 12px 0 0;
-        font-size: 1.5rem;
-    }
-}
+    
+    
+    
+
 
 .interests {
     padding: 1rem 0 0 0;
@@ -278,6 +272,9 @@ hr {
             flex-flow: column;
             justify-content: center;
             align-items: center;
+            .skills_flex {
+                flex-flow: column;
+            }
         }
     }
     body {

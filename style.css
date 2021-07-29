@@ -40,6 +40,10 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   width: 1280px;
   margin: auto;
   background-color: white;
@@ -120,7 +124,7 @@ hr {
 
 .top_header {
   background-color: #003147;
-  width: 332px;
+  width: 100%;
   padding: 1rem;
 }
 
@@ -153,10 +157,6 @@ hr {
   font-style: italic;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
-}
-
-.top_header .waves {
-  width: 100%;
 }
 
 .top_header .header_name {
@@ -211,31 +211,23 @@ hr {
   text-decoration: none;
 }
 
-.skills {
-  padding: 2rem 0;
-}
-
-.skills .skills_flex {
+.top_header .header_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.skills .skills_flex .skills_item_2, .skills .skills_flex .skills_item_3 {
-  margin-left: 17.5%;
+.skills_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.skills li {
-  list-style-type: none;
-  margin: 2rem 0 0 0;
-}
-
-.skills i {
-  margin: 2rem 12px 0 0;
-  font-size: 1.5rem;
+.skills_flex .skills_item li {
+  padding-right: 20px !important;
 }
 
 .interests {
@@ -369,6 +361,12 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .top_header .header_flex .skills_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   body {
     padding: 0;
