@@ -277,7 +277,7 @@ hr {
             justify-content: center;
             align-items: center;
             .skills_flex {
-                flex-flow: column;
+                flex-flow: row wrap;
             }
         }
     }

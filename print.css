@@ -6,6 +6,8 @@
     height: auto;
 }
 
+
+
 body {
     padding: 0;
 }
@@ -20,4 +22,8 @@ hr {
 
 .project {
     padding-top: 1rem;
+}
+
+.project_experience h2 {
+    margin-top: 200px !important;
 }

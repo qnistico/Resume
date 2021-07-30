@@ -366,10 +366,10 @@ hr {
             align-items: center;
   }
   .top_header .header_flex .skills_flex {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   body {
     padding: 0;
