@@ -123,9 +123,8 @@ hr {
 }
 
 .top_header {
-  background-color: #003147;
+  background-color: #333;
   width: 100%;
-  padding: 1rem;
 }
 
 .top_header h1 {
@@ -195,7 +194,7 @@ hr {
 
 .top_header .header_info .header_info_item {
   padding: 8px 0;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 5px 0;
   color: white;
 }
 
