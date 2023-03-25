@@ -172,6 +172,7 @@ hr {
 .top_header .header_flex {
   display: flex;
   justify-content: space-evenly;
+  padding: 5px 20px 20px 20px;
 }
 
 .skills_flex {
