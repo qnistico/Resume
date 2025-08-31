@@ -27,3 +27,117 @@ hr {
 .project_experience h2 {
     margin-top: 175px !important;
 }
+
+/* new */
+
+/* print.css */
+@media print {
+  /* Reset background + color for print readability */
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex_main {
+    width: 100% !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove dark header background, keep text readable */
+  .top_header {
+    background: none !important;
+    color: #000 !important;
+  }
+  .top_header .header_name,
+  .top_header h1,
+  .top_header h2,
+  .top_header h3,
+  .top_header h4,
+  .top_header .header_info,
+  .top_header a {
+    color: #000 !important;
+    background: none !important;
+  }
+  .top_header .header_info_item i {
+    color: #000 !important;
+  }
+
+  /* Simplify skill lists */
+  .skills_item li::before {
+    content: "• " !important;
+    color: #000 !important;
+  }
+
+  /* Links: show as normal text, no blue/underline */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  /* Optional: append URLs in parentheses */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+
+  /* Remove extra padding for compactness */
+  .column_flex,
+  .summary,
+  .work_experience,
+  .project_experience,
+  .project {
+    padding: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Typography adjustments */
+  h1 {
+    font-size: 18pt !important;
+  }
+  h2 {
+    font-size: 14pt !important;
+    margin-top: 1rem;
+  }
+  h3 {
+    font-size: 12pt !important;
+  }
+  h4 {
+    font-size: 11pt !important;
+    font-weight: normal;
+    color: #444 !important;
+  }
+  p, li {
+    font-size: 11pt !important;
+  }
+
+  /* Force single column layout */
+  .work_experience_flex,
+  .skills_flex {
+    flex-direction: column !important;
+  }
+  .cols-w-40 .project {
+    width: 100% !important;
+  }
+
+  /* Page-break handling */
+  .project,
+  .work_experience,
+  .project_experience {
+    page-break-inside: avoid;
+  }
+
+  /* Hide elements not needed in print */
+  script, .cover_body, .cover_header {
+    display: none !important;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #aaa;
+    margin: 0.75rem 0;
+  }
+}

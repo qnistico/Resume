@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  background-color: lightblue;
+  background-color: #E9EEF3;
   padding: 2rem;
   margin: auto;
   font-size: 16px;
@@ -15,13 +15,13 @@ body {
   line-height: 25.88px;
 }
 
-p {
-  color: #333;
+p, li:not(.skills_item li) {
+  color: #1A2733;
 }
 
 h2 {
   margin: 0.5rem 0 0.5rem 0;
-  color: #003147;
+  color: #0B1D2B;
   font-size: 28px;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
@@ -29,7 +29,7 @@ h2 {
 
 h3 {
   margin: 0 0 0.5rem 0;
-  color: #3d75d0;
+  color: #357ABD;
 }
 
 li {
@@ -41,7 +41,7 @@ li {
   flex-flow: column;
   width: 1280px;
   margin: auto;
-  background-color: white;
+  background-color: #F5F7FA;
 }
 
 .column_flex {
@@ -53,8 +53,11 @@ li {
 
 .work_experience_flex {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.cols-w-40 .project {
+  width: 50%;
 }
 
 .work_experience {
@@ -81,7 +84,7 @@ li {
   margin-top: 1rem;
 }
 .project a {
-  color: #0645AD;
+  color: #2978FF;
 }
 
 .small_hr {
@@ -100,11 +103,11 @@ hr {
   margin-top: 1rem;
 }
 .summary a {
-  color: #0645AD;
+  color: #2978FF;
 }
 
 .top_header {
-  background-color: #333;
+  background-color: #1A2733;
   width: 100%;
 }
 .top_header h1 {
@@ -115,7 +118,7 @@ hr {
   letter-spacing: 1px;
 }
 .top_header h2 {
-  color: white;
+  color: #F5F7FA;
   margin-top: 0.5rem;
   font-size: 38px;
   font-weight: 800;
@@ -124,19 +127,18 @@ hr {
 }
 .top_header h3 {
   font-size: 1.2rem;
-  color: white;
+  color: #F5F7FA;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 .top_header h4 {
   font-size: 1rem;
-  font-style: italic;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 .top_header .header_name {
-  color: white;
-  background-color: #0d5d77;
+  color: #F5F7FA;
+  background-color: #0B1D2B;
   padding: 1rem;
   text-align: center;
 }
@@ -147,7 +149,7 @@ hr {
 }
 .top_header .header_info ul li::before {
   content: "•";
-  color: #03a9f4;
+  color: #29B6F6; /* 03a9f4 */
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -161,29 +163,35 @@ hr {
 .top_header .header_info .header_info_item {
   padding: 8px 0;
   margin: 5px 0;
-  color: white;
+  color: #F5F7FA;
 }
 .top_header .header_info .header_info_item i {
   font-size: 1.75rem;
   margin-right: 1rem;
   vertical-align: sub;
-  color: #03a9f4;
+  color: #29B6F6;
 }
 .top_header .header_info .header_info_item a {
-  color: white;
+  color: #F5F7FA;
   text-decoration: none;
 }
 .top_header .header_flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5px 20px 20px 20px;
 }
 
 .skills_flex {
   display: flex;
+  justify-content: space-between;
 }
 .skills_flex .skills_item li {
   padding-right: 20px !important;
+}
+
+.top_header .header_info ul {
+  max-width: 300px;
+  padding-right: 30px;
 }
 
 .interests {
@@ -196,7 +204,7 @@ hr {
 }
 .interests i {
   font-size: 1.75rem;
-  color: #3d75d0;
+  color: #357ABD;
   margin-bottom: 8px;
 }
 .interests .icon_flex {
@@ -207,14 +215,14 @@ hr {
 }
 
 .cover_body {
-  background-color: white;
+  background-color: #F5F7FA;
   width: 62% !important;
   padding: 0;
 }
 
 .cover_header {
-  background-color: #003147;
-  color: white;
+  background-color: #0B1D2B;
+  color: #F5F7FA;
   min-height: 25vh;
   display: flex;
   flex-flow: column nowrap;
@@ -222,26 +230,26 @@ hr {
   justify-content: center;
 }
 .cover_header h1 {
-  color: white;
+  color: #F5F7FA;
   text-align: center;
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 1.5rem;
 }
 .cover_header h2 {
-  color: white;
+  color: #F5F7FA;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   font-style: italic;
 }
 .cover_header p {
-  color: white;
+  color: #F5F7FA;
   text-align: center;
   margin-bottom: 5px;
 }
 .cover_header a {
-  color: white;
+  color: #F5F7FA;
   text-decoration: none;
 }
 .cover_header .cover_header_flex {
@@ -285,6 +293,9 @@ hr {
   .work_experience_flex {
     flex-flow: column !important;
   }
+  .cols-w-40 .project {
+  width: 100%;
+}
 }
 @media screen and (max-width: 1400px) {
   .flex_main {
