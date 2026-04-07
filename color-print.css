@@ -15,7 +15,7 @@
 
   @page {
     size: letter portrait;
-    margin: 0.4in 0;
+    margin: 0;
   }
 
   html {
@@ -28,22 +28,26 @@
     padding: 0;
   }
 
+  .pt-05 {
+    padding-top: 0.4in !important;
+  }
+
   /* Keep two-column grid layout */
   .page {
     display: grid !important;
     grid-template-columns: 200px 1fr !important;
+    grid-template-rows: auto 1fr !important;
     max-width: none;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    min-height: 100vh;
   }
 
   /* --- Sidebar: keep color + vertical layout --- */
   .sidebar {
     background: #1e293b !important;
     color: #fff !important;
-    padding: 0.5in 0.2in 0.5in 0.2in !important;
+    padding: 0.4in 0.2in 0.4in 0.2in !important;
     border-bottom: none;
     margin-bottom: 0;
   }
@@ -128,7 +132,7 @@
 
   /* --- Main content --- */
   .main {
-    padding: 0.5in 0.45in 0.5in 0.35in !important;
+    padding: 0.4in 0.45in 0.4in 0.35in !important;
   }
 
   .section {
