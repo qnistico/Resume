@@ -254,9 +254,9 @@
     page-break-inside: avoid;
   }
 
-  /* Links */
+  /* Links — keep visibly clickable in PDF */
   a {
-    color: #1e293b !important;
+    color: #1e6a9e !important;
     text-decoration: none !important;
   }
 

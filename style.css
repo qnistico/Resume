@@ -711,9 +711,9 @@ a:hover {
     break-inside: avoid;
   }
 
-  /* Hide link underline effects */
+  /* Links — keep visibly clickable in PDF */
   a {
-    color: #1e293b;
+    color: #1e6a9e;
     text-decoration: none;
   }
   a:hover {
