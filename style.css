@@ -7,9 +7,9 @@
 /* --- CSS Custom Properties --- */
 :root {
   /* Brand */
-  --accent: #0d5d77;
-  --accent-light: #e8f4f8;
-  --accent-mid: #1a7a96;
+  --accent: #1e293b;
+  --accent-light: #f0f7ff;
+  --accent-mid: #0369a1;
 
   /* Neutrals */
   --text: #1a1a2e;
@@ -18,7 +18,7 @@
   --border: #e2e2e8;
   --bg-body: #f0f2f5;
   --bg-page: #ffffff;
-  --bg-sidebar: #0d5d77;
+  --bg-sidebar: #1e293b;
   --sidebar-text: #ffffff;
   --sidebar-muted: rgba(255, 255, 255, 0.7);
 
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .title-accent {
-  color: #7dd3e8;
+  color: #38bdf8;
   font-weight: 600;
 }
 
@@ -132,7 +132,7 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #7dd3e8;
+  color: #38bdf8;
   margin-bottom: 0.75rem;
 }
 
@@ -154,7 +154,7 @@ a:hover {
   word-break: break-all;
 }
 .contact-list a:hover {
-  color: #7dd3e8;
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -303,12 +303,54 @@ a:hover {
 }
 
 .entry-link {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   margin-top: 0.5rem;
+}
+
+.entry-link a {
+  font-weight: 600;
 }
 
 .entry-link strong {
   color: var(--text);
+}
+
+/* Featured Product */
+.badge-live {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #16a34a;
+  border-radius: 100px;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  position: relative;
+  top: -1px;
+}
+
+.product-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.stack-pill {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  white-space: nowrap;
+  letter-spacing: 0.1px;
 }
 
 /* Projects Grid */
@@ -467,7 +509,7 @@ a:hover {
     background: none !important;
     color: #1a1a1a;
     padding: 0 0 0.4rem 0;
-    border-bottom: 2.5px solid #0d5d77;
+    border-bottom: 2.5px solid #1e293b;
     margin-bottom: 0.6rem;
   }
 
@@ -484,7 +526,7 @@ a:hover {
 
   .name {
     font-size: 20pt;
-    color: #0d5d77;
+    color: #1e293b;
     line-height: 1.1;
   }
   .name br {
@@ -497,11 +539,11 @@ a:hover {
   }
 
   .title-accent {
-    color: #0d5d77;
+    color: #1e293b;
   }
 
   .sidebar-heading {
-    color: #0d5d77;
+    color: #1e293b;
     font-size: 7pt;
     margin-bottom: 0.3rem;
   }
@@ -529,7 +571,7 @@ a:hover {
   .icon {
     width: 11px;
     height: 11px;
-    color: #0d5d77;
+    color: #1e293b;
     opacity: 1;
   }
 
@@ -560,8 +602,8 @@ a:hover {
     padding-bottom: 0.2rem;
     margin-bottom: 0.4rem;
     border-bottom-width: 1.5px;
-    color: #0d5d77;
-    border-color: #0d5d77;
+    color: #1e293b;
+    border-color: #1e293b;
   }
 
   .section-subtitle {
@@ -602,7 +644,7 @@ a:hover {
   .entry-list li::before {
     width: 3px;
     height: 3px;
-    background: #0d5d77;
+    background: #1e293b;
   }
 
   .entry-link {
@@ -632,6 +674,29 @@ a:hover {
     color: #666;
   }
 
+  /* Featured product print styles */
+  .badge-live {
+    padding: 0.05rem 0.3rem;
+    font-size: 6pt;
+    background: #16a34a;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .product-stack {
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+    gap: 0.2rem;
+  }
+
+  .stack-pill {
+    font-size: 7pt;
+    padding: 0.05rem 0.35rem;
+    color: #1e293b;
+    border-color: #bbb;
+  }
+
   /* Page break control */
   .entry {
     break-inside: avoid;
@@ -642,9 +707,13 @@ a:hover {
     break-inside: avoid;
   }
 
+  .featured-product {
+    break-inside: avoid;
+  }
+
   /* Hide link underline effects */
   a {
-    color: #0d5d77;
+    color: #1e293b;
     text-decoration: none;
   }
   a:hover {
