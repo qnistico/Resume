@@ -85,7 +85,10 @@
     color: #38bdf8 !important;
     font-size: 6pt;
     margin-bottom: 0.3rem;
-    letter-spacing: 1.2px;
+    /* Scaled down with the screen value for Inter Tight's narrower caps. At 6pt
+       this is the smallest type on the page, so it keeps more relative tracking
+       than the screen rule. */
+    letter-spacing: 1px;
   }
 
   .sidebar-section {

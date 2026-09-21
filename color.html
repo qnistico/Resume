@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="color-print.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -111,10 +111,42 @@
       </div>
     </section>
 
-    <!-- Featured Product: VampJam -->
+    <!-- Featured Products: verve, VampJam -->
     <section class="section featured-product">
-      <h2 class="section-heading">Independent Product</h2>
-      <p class="section-subtitle">Self-initiated SaaS product, independently designed and shipped.</p>
+      <h2 class="section-heading">Independent Products</h2>
+      <p class="section-subtitle">Self-initiated SaaS products, independently designed and shipped.</p>
+
+      <div class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">verve &mdash; Founder &amp; Product Designer</h3>
+          <span class="entry-date"><span class="badge-live">LIVE</span> 2026 &mdash; Present</span>
+        </div>
+        <p class="entry-company"><a href="https://www.verveapp.dev" target="_blank" rel="noopener noreferrer">verveapp.dev</a> &mdash; Browser-Based Motion Design Tool</p>
+        <p class="entry-summary">Designed, architected, and shipped a motion design tool for the people who build interfaces, using AI-assisted development while directing all product, design, UX, and architectural decisions. Designers animate their own React or HTML components by direct manipulation and export production Motion, GSAP, or CSS with no runtime dependency attached.</p>
+        <ul class="entry-list">
+          <li>Designed the complete UI/UX &mdash; a three-panel editor with a custom timeline, spring pad, curve editor, and command palette, across 29 pages of product and marketing surface</li>
+          <li>Built a custom animation engine from scratch: ~20,000 lines of TypeScript with zero framework dependencies, including a closed-form spring solver, keyframe evaluation, and three independent code generators</li>
+          <li>Guaranteed export fidelity with an automated gate that replays 111 exported scenes in a real browser as Motion, GSAP, and CSS and compares each against the engine&rsquo;s own trace</li>
+          <li>Architected live Stripe subscription billing &mdash; Checkout, Customer Portal, signature-verified webhooks, and plan entitlements enforced in Postgres rather than in the client</li>
+          <li>Executes users&rsquo; pasted React/HTML inside a sandboxed opaque-origin iframe with in-browser JSX transpilation, no network access, and images that never leave the device</li>
+          <li>Integrated Supabase (Postgres/RLS/auth), Stripe, Anthropic (AI assist), Figma import, a GitHub App that opens pull requests, Resend, Sentry, and Vercel</li>
+          <li>Wrote 1,859 unit tests plus browser-level gates covering the editor, marketing site, and database security, and shipped a CLI and MCP server so the motion linter and exporter run in CI</li>
+        </ul>
+
+        <div class="product-stack">
+          <span class="stack-pill">Next.js 16</span>
+          <span class="stack-pill">React 19</span>
+          <span class="stack-pill">TypeScript</span>
+          <span class="stack-pill">Tailwind v4</span>
+          <span class="stack-pill">Zustand</span>
+          <span class="stack-pill">Supabase</span>
+          <span class="stack-pill">Stripe</span>
+          <span class="stack-pill">Sentry</span>
+          <span class="stack-pill">Vercel</span>
+          <span class="stack-pill">CodeMirror</span>
+          <span class="stack-pill">Playwright</span>
+        </div>
+      </div>
 
       <div class="entry">
         <div class="entry-header">
