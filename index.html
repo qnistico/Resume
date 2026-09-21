@@ -18,7 +18,11 @@
     <div class="sidebar-inner">
 
       <div class="sidebar-header">
-        <h1 class="name">Quinton<br>Nistico</h1>
+        <!-- The space before <br> is load-bearing: print and the mobile
+             breakpoint both set `.name br { display: none }`, and without it the
+             two text nodes join into "QuintonNistico". HTML collapses trailing
+             whitespace at a line break, so the two-line display is unchanged. -->
+        <h1 class="name">Quinton <br>Nistico</h1>
         <p class="title">UI/UX Designer &amp; Developer</p>
       </div>
 
